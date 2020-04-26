@@ -42,14 +42,13 @@ public class MainActivity<text> extends AppCompatActivity
     private void addEvent()
     {
         buttonXACNHAN.setOnClickListener(new View.OnClickListener() {
-            String soThich="";
+
             @Override
             public void onClick(View v) {
                 String Name = getName();
                 String Date = getDate();
                 String Sex = getSex();
-                //String Like = getLike();
-
+                String soThich="";
                 if(checkBoxST1.isChecked())
                 {
                     soThich += checkBoxST1.getText() + " ; ";
